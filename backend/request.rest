@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJCdXJoYW4iLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNjc0NjM1NzYzLCJleHAiOjE2NzQ2MzU3Nzh9.YF1ebQ4ziVfxMMfdPrFAt01emdlW-eN7LR2adbJUTwc
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "jamal",
+    "email": "email@gmail.com",
+    "password": "123456",
+    "confPassword": "12345690"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
